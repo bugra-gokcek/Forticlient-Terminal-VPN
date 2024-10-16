@@ -45,7 +45,7 @@ add_vpn() {
     trusted_cert=$(echo "$vpn_output" | sed -n 's/.*--trusted-cert \([a-fA-F0-9]\{64\}\).*/\1/p')
 
     if [ -n "$trusted_cert" ]; then
-        echo "Sertificate found : $trusted_cert"
+        echo "Certificate found : $trusted_cert"
 
         vpn_entry=$(jq -n --arg name "$VpnName" --arg ip "$VpnIP" --arg port "$VpnPort" --arg user "$VpnUser" --arg pass "$VpnPass" --arg cert "$trusted_cert" \
         '{name: $name, ip: $ip, port: $port, user: $user, pass: $pass, cert: $cert}')
@@ -57,7 +57,7 @@ add_vpn() {
 
         dialog --msgbox "VPN added successfully. New name : $VpnName" 6 40
     else
-        dialog --msgbox "Sertificate not found, process failed." 6 40
+        dialog --msgbox "Certificate not found, process failed." 6 40
     fi
     show_menu
 }
