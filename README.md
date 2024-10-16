@@ -41,9 +41,9 @@ mkdir -m 755 ~/.ftermvpn
 
 
 ```bash
-wget -O ~/.ftermvpn/ftermvpn.sh https://raw.githubusercontent.com/bugra-gokcek/denem123/refs/heads/main/ftermvpn_for_mac.sh
+wget -O ~/.ftermvpn/ftermvpn.sh https://raw.githubusercontent.com/bugra-gokcek/Forticlient-Terminal-VPN/refs/heads/main/ftermvpn_for_mac.sh
 
-wget -O ~/.ftermvpn/vpn_config.json https://raw.githubusercontent.com/bugra-gokcek/denem123/refs/heads/main/vpn_config.json
+wget -O ~/.ftermvpn/vpn_config.json https://raw.githubusercontent.com/bugra-gokcek/Forticlient-Terminal-VPN/refs/heads/main/vpn_config.json
 ```
 
 ### 3. Set execute permissions for the script
