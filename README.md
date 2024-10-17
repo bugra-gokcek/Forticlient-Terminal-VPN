@@ -15,6 +15,7 @@ After you installed brew, you need to install `dialog` for UI stylish menu, `jq`
 > :bulb:  You don't have to install wget, you can manually copy the file contents from the repo, but if you're lazy I suggest you do.
 
 ```bash
+brew install openfortivpn
 brew install dialog
 brew install jq
 brew install wget
@@ -22,7 +23,7 @@ brew install wget
 
 ### For Linux
 
-**Coming Soon**
+**Linux support will added soon.**
 
 At the moment I haven't adapted it for linux systems yet. I will share it as soon as I can. If you don't want to wait, you can use it on linux by using **`whiptail`** instead of **`dialog`** and making the relevant changes.
 
@@ -36,8 +37,6 @@ Create a hidden directory in your home directory and set standard permissions wi
 mkdir -m 755 ~/.ftermvpn
 ```
 ### 2. Download the necessary files
-
-#### For MacOS
 
 
 ```bash
@@ -72,6 +71,22 @@ sudo ln -s ~/.ftermvpn/ftermvpn.sh /usr/local/bin/ftermvpn
 ```
 
 After completing these steps, you can run the `ftermvpn` by simply typing ftermvpn in the terminal.
+
+### 5.1 Alternative way : Alias
+
+If you dont want to create link or you have some issues with links, you can create an alias for easier access. 
+
+#### Mac
+
+```bash
+echo "alias ftermvpn='bash ~/.ftermvpn/ftermvpn.sh'" >> ~/.zshrc
+```
+
+#### Linux
+
+```bash
+echo "alias ftermvpn='bash ~/.ftermvpn/ftermvpn.sh'" >> ~/.bashrc
+```
 
 ---
 ## Issues and Help
